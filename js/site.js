@@ -1,21 +1,75 @@
-// jQuery 3.x-style ready event and locally scoped $
-jQuery(function($) {
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const confirm = document.getElementById('confirm');
 
-let signupBtn = document.getElementById("signupBtn");
-let signinBtn = document.getElementById("signinBtn");
-let nameField = document.getElementById("nameField");
-let titile = document.getElementById("title");
+form.addEventListener('submit', e => {
+    e.preventDefault();
 
-signinBtn.onclick = function(){
-    nameField.style.maxHeight = "0";
-	title.innerHTML = Sign In";
-	signupBtn.classList.add("disable")
-	signinBtn.classList.remove("disable")
+    checkInputs();
+});
+
+function checkInputs() {
+    // trim to remove the whitespaces
+    const nameValue = name.value.trim();
+    const emailValue = email.value.trim();
+    const passwordValue = password.value.trim();
+    const confirmValue = confirm.value.trim();
+
+    if (nameValue === '') {
+        setErrorFor(name, 'Please enter your name');
+    } else {
+        setSuccessFor(name);
+    }
+
+    if (emailValue === '') {
+        setErrorFor(email, 'Please enter your email');
+    } else if (!isEmail(emailValue)) {
+        setErrorFor(email, 'Email not valid');
+    } else {
+        setSuccessFor(email);
+    }
+
+    if (passwordValue === '') {
+        setErrorFor(password, 'Please enter password');
+    } else if (!isPassword(passwordValue)) {
+        setErrorFor(password, 'atleast one number, one uppercase, lowercase letter, and atleast 8 character');
+    }else {
+        setSuccessFor(password);
+    }
+
+    if (confirmValue === '') {
+        setErrorFor(confirm, 'Please re-enter password');
+    } else if (!isConfirm(confirmValue)) {
+        setErrorFor(confirm, 'Invalid password');
+    }else if (passwordValue !== confirmValue) {
+        setErrorFor(confirm, 'Passwords does not match');
+    } else {
+        setSuccessFor(confirm);
+    }
 }
 
-signupBtn.onclick = function(){
-    nameField.style.maxHeight = "60px";
-	title.innerHTML = Sign Up";
-	signupBtn.classList.remove("disable")
-	signinBtn.classList.add("disable")
+function setErrorFor(input, message) {
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+    formControl.className = 'form-control error';
+    small.innerText = message;
+}
+
+function setSuccessFor(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-control success';
+}
+
+function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+function isPassword(password){  
+    return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password);
+}
+
+function isConfirm(confirm){  
+    return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password);
 }
