@@ -7,9 +7,18 @@
     background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
    
 }
-
+}
 @media screen and (min-width: 1200px) {
-   body{
+   body {
+       background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
+       }
+       .check-input li{
+        padding-right: 7.5em;
+    }
+    }
+    
+    
+    body{
     background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5); 
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
