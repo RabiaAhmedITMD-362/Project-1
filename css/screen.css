@@ -2,22 +2,22 @@
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 800px) {
     body{
-        background-image: url("../images/background-800.JPG");
+        background-image: url("../images/background2.jpg");
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
     body{
-        background-image: url("../images/background-800.jpg");
+        background-image: url("../images/background2.jpg");
     }
     .check-input li{
         padding-right: 7.5em;
     }
 }
 body {
-    background-image: url("../images/background-400.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     font-family: 'Roboto', sans-serif;
