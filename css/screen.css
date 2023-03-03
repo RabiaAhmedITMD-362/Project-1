@@ -3,10 +3,9 @@
 }
 
 @media screen and (min-width: 800px) {
-    .form {
-    margin: 0 auto;
-    max-width: 16rem;
-    overflow: auto;
+ body {  
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (min-width: 1200px) {
@@ -14,9 +13,7 @@
 }
 body {
     background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
-    background-repeat: no-repeat;
     background-size: 100vw 100vh;
-    font-family: 'Roboto', sans-serif;
      
 }
 
@@ -40,7 +37,11 @@ body {
     .header h2 {
        color: #fff;
     }
-
+.form {
+    margin: 0 auto;
+    max-width: 16rem;
+    overflow: auto;
+}
 .form-control {
     margin-bottom: 10px;
     padding-bottom: 20px;
