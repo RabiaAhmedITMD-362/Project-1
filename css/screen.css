@@ -18,10 +18,9 @@
 }
 body {
     background-image: url("../images/homepage-400.jpg");
-    margin: 0;
-     padding-bottom: 20px;
-     font-family: 'Nunito', sans-serif;
-     color: white;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    font-family: 'Roboto', sans-serif;
      
 }
 
