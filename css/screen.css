@@ -10,14 +10,14 @@
 
 @media screen and (min-width: 800px) {
     body{
-        background-image: url("../images/homepage-800.jpg");
+        background-image: url("../images/background-800.jpg");
     }
     .check-input li{
         padding-right: 7.5em;
     }
 }
 body {
-    background-image: url("../images/homepage-400.jpg");
+    background-image: url("../images/background-400.jpg");
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     font-family: 'Roboto', sans-serif;
