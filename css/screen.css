@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 400px) {
     body{
-        background-image: url("../images/background-400.JPG.jpeg");
+        background-image: url("../images/background-800.JPG");
     }
 }
 
@@ -17,7 +17,7 @@
     }
 }
 body {
-    background-image: url("../images/homepage-400.jpeg");
+    background-image: url("../images/homepage-400.jpg.g");
     margin: 0;
      padding-bottom: 20px;
      font-family: 'Nunito', sans-serif;
