@@ -3,21 +3,19 @@
 }
 
 @media screen and (min-width: 800px) {
-    body{
-        background-image: url("../images/background.jpg");
-    }
+    .form {
+    margin: 0 auto;
+    max-width: 16rem;
+    overflow: auto;
 }
 
 @media screen and (min-width: 1200px) {
-    body{
-        background-image: url("../images/background2.jpg");
-    }
-    .check-input li{
-        padding-right: 7.5em;
+    .form-control.error small {
+        visibility: visible;
     }
 }
 body {
-    background-image: url("../images/background2.jpg");
+    background-image: linear-gradient(270deg, #08AEEA 0%, #2AF598 100%);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     font-family: 'Roboto', sans-serif;
@@ -44,12 +42,6 @@ body {
     .header h2 {
        color: #fff;
     }
-
-.form {
-    margin: 0 auto;
-    max-width: 16rem;
-    overflow: auto;
-}
 
 .form-control {
     margin-bottom: 10px;
@@ -93,11 +85,6 @@ body {
         visibility: visible;
     }
 
-    .form-control.error i.fa-times-circle {
-        color: #e74c3c;
-        visibility: visible;
-    }
-
     .form-control small {
         color: #e74c3c;
         position: absolute;
@@ -122,15 +109,3 @@ body {
             outline: 0;
             border-bottom-color: #777;
         }
-
-.credit{
-    text-align: center;
-    color: #000;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.credit a{
-    text-decoration: none;
-    color:#000;
-    font-weight: bold;
-}  
