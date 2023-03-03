@@ -4,13 +4,13 @@
 
 @media screen and (min-width: 400px) {
     body{
-        background-image: url("../images/homepage-800 .jpg");
+        background-image: url("../images/background-400.JPG.jpeg");
     }
 }
 
 @media screen and (min-width: 800px) {
     body{
-        background-image: url("../images/homepage-800 .jpg");
+        background-image: url("../images/homepage-800.jpg");
     }
     .check-input li{
         padding-right: 7.5em;
