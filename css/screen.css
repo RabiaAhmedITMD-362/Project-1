@@ -10,10 +10,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-   background-image: linear-gradient(270deg, #08AEEA 0%, #2AF598 100%); 
+   background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5); 
 }
 body {
-    background-image: linear-gradient(270deg, #08AEEA 0%, #2AF598 100%);
+    background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
     background-repeat: no-repeat;
     background-size: 100vw 100vh;
     font-family: 'Roboto', sans-serif;
