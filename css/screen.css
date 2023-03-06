@@ -28,7 +28,6 @@ body {
 .wrapper {
     background-color: #202124;
     position: relative;
-    width: 30%;
     height: max-content;
     margin: 100px auto;
     padding: 100px;
