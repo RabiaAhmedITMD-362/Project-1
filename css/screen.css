@@ -1,43 +1,22 @@
+/* Set box-sizing for all elements */
 * {
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 800px) {
-    body {
-        background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    body {
-        background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
-    }
-
-    .check-input li {
-        padding-right: 7.5em;
-    }
-}
-
+/* Base styles */
 body {
-    background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
 }
 
 .wrapper {
-    background-color: #202124;
-    position: relative;
-    height: max-content;
+    max-width: 70em;
     margin: 100px auto;
     padding: 100px;
     border-radius: 10px;
-    max-width: 70em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .header {
-    position: relative;
     text-align: center;
 }
 
@@ -66,7 +45,7 @@ body {
     font-family: inherit;
     padding: 10px;
     font-size: 14px;
-    width: 100%;
+    width: 90%; /* make input fields 90% width on mobile screens */
 }
 
 .form-control input:focus {
@@ -74,6 +53,35 @@ body {
     border-bottom-color: #777;
 }
 
+/* Media query for larger screens */
+@media screen and (min-width: 800px) {
+    body {
+        background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
+    }
+    
+    .wrapper {
+        height: max-content;
+    }
+
+    .form-control li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .check-input li {
+        padding-right: 7.5em;
+    }
+}
+
+/* Media query for even larger screens */
+@media screen and (min-width: 1200px) {
+    .form-control li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+/* Additional styles for form control success and error states */
 .form-control.success input {
     border-bottom-color: #2ecc71;
 }
@@ -87,10 +95,6 @@ body {
     position: absolute;
     top: 40px;
     right: 10px;
-}
-
-.form-control.error small {
-    visibility: visible;
 }
 
 .form-control.success i.fa-check-circle {
