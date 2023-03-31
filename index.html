@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>sign up</title>
+    <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/reset.css" rel="stylesheet" media="screen">
     <link href="css/screen.css" rel="stylesheet" media="screen">
@@ -11,20 +10,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="js/site.js" async></script>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="header">
-            <h2>Sign Up</h2>
+      <div class="header">
+        <h2>Sign Up</h2>
+      </div>
+      <form id="form" class="form" autocomplete="on">
+        <div class="form-control">
+          <input type="text" placeholder="Enter name" id="name">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-times-circle"></i>
+          <small>Error message</small>
         </div>
-        <form id="form" class="form">
-            <div class="form-control"> <input type="text" placeholder="Enter name" id="name"> <i class="fas fa-check-circle"></i> <i class="fas fa-times-circle"></i> <small>Error message</small> </div>
-            <div class="form-control"> <input type="email" placeholder="Enter email" id="email"> <i class="fas fa-check-circle"></i> <i class="fas fa-times-circle"></i> <small>Error message</small> </div>
-            <div class="form-control"> <input type="password" placeholder="Password" id="password"> <i class="fas fa-check-circle"></i> <i class="fas fa-times-circle"></i> <small>Error message</small> </div>
-            <div class="form-control"> <input type="password" placeholder="Confirm Password" id="confirm"> <i class="fas fa-check-circle"></i> <i class="fas fa-times-circle"></i> <small>Error message</small> </div> <button>Submit</button>
-        </form>
+        <div class="form-control">
+          <input type="email" placeholder="Enter email" id="email">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-times-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input type="password" placeholder="Password" id="password">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-times-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <input type="password" placeholder="Confirm Password" id="confirm">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-times-circle"></i>
+          <small>Error message</small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
-</body>
-
+  </body>
 </html>
