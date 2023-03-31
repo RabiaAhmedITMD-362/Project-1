@@ -5,9 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #8a2be2, #eecbad, #f5f5f5);
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
+    background-color: #8a2be2;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
 }
