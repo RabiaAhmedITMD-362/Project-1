@@ -69,3 +69,8 @@ function isEmail(email) {
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
 }
+
+const submitBtn = document.querySelector('button[type="submit"]');
+submitBtn.addEventListener('click', () => {
+  form.submit();
+});
